@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.facebook.qa.testcases.AddStoryTest">
+        <methods>
+          <include name="FB_Addtest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.facebook.qa.testcases.AddStoryTest -->
+      <class name="com.facebook.qa.testcases.SignUpTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="SignUpPageTest"/>
+        </methods>
+      </class> <!-- com.facebook.qa.testcases.SignUpTest -->
+      <class name="com.facebook.qa.testcases.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="homebtn"/>
+          <include name="searchingFacebook"/>
+        </methods>
+      </class> <!-- com.facebook.qa.testcases.HomePageTest -->
+      <class name="com.listenerproject.SampleProject">
+        <methods>
+          <include name="validateMathOPeration"/>
+        </methods>
+      </class> <!-- com.listenerproject.SampleProject -->
+      <class name="com.allure_reports.AllureReporting">
+        <methods>
+          <include name="validateLogin"/>
+        </methods>
+      </class> <!-- com.allure_reports.AllureReporting -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
